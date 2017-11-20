@@ -14,6 +14,7 @@
 		$ingredientid = mysqli_real_escape_string($conn, $_POST['ingredientid']);
 		$username = $_SESSION['username'];
 		$date = date('Y-m-d');
+		//echotae
 		
 		$query1 = "SELECT * from ingredient where ingredient_name = '$ingredientid'";
 		$var = mysqli_query($conn, $query1);
